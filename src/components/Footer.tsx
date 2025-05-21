@@ -34,30 +34,21 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Navigatie</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition">Home</a>
+                <a href="/" className="text-gray-300 hover:text-white transition">Home</a>
               </li>
               <li>
-                <a href="#about" className="text-gray-300 hover:text-white transition">Over ons</a>
+                <a href="/#about" className="text-gray-300 hover:text-white transition">Over ons</a>
               </li>
               <li>
-                <a href="#services" className="text-gray-300 hover:text-white transition">Diensten</a>
+                <a href="/#services" className="text-gray-300 hover:text-white transition">Diensten</a>
               </li>
               <li>
-                <a href="#projects" className="text-gray-300 hover:text-white transition">Realisaties</a>
+                <a href="/#why-choose-us" className="text-gray-300 hover:text-white transition">Waarom ons kiezen</a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-white transition">Contact</a>
+                <a href="/contact" className="text-gray-300 hover:text-white transition">Contact</a>
               </li>
             </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-xl font-bold mb-4">Openingsuren</h3>
-            <div className="space-y-2">
-              <p className="text-gray-300">Maandag - Vrijdag: 8:00 - 18:00</p>
-              <p className="text-gray-300">Zaterdag: Op afspraak</p>
-              <p className="text-gray-300">Zondag: Gesloten</p>
-            </div>
           </div>
         </div>
         

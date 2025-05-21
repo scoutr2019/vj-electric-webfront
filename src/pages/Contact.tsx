@@ -9,10 +9,17 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
-const Contact = () => {
-  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+type FormValues = {
+  name: string;
+  email: string;
+  subject?: string;
+  message: string;
+};
 
-  const onSubmit = (data) => {
+const Contact = () => {
+  const { register, handleSubmit, formState: { errors }, reset } = useForm<FormValues>();
+
+  const onSubmit = (data: FormValues) => {
     console.log('Form submitted:', data);
     toast.success('Bericht verzonden! We nemen spoedig contact met u op.');
     reset();
@@ -76,15 +83,6 @@ const Contact = () => {
                       </div>
                     </div>
                   </div>
-                  
-                  <div className="mt-8">
-                    <h3 className="font-medium text-gray-900 mb-2">Openingsuren</h3>
-                    <div className="space-y-1 text-gray-600">
-                      <p>Maandag - Vrijdag: 8:00 - 18:00</p>
-                      <p>Zaterdag: Op afspraak</p>
-                      <p>Zondag: Gesloten</p>
-                    </div>
-                  </div>
                 </div>
               </div>
               
@@ -102,7 +100,7 @@ const Contact = () => {
                         placeholder="Uw naam"
                         className={errors.name ? 'border-red-500' : ''}
                       />
-                      {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+                      {errors.name && <p className="text-red-500 text-sm">{errors.name.message as string}</p>}
                     </div>
                     
                     <div className="space-y-2">
@@ -120,7 +118,7 @@ const Contact = () => {
                         placeholder="uw.email@voorbeeld.com"
                         className={errors.email ? 'border-red-500' : ''}
                       />
-                      {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+                      {errors.email && <p className="text-red-500 text-sm">{errors.email.message as string}</p>}
                     </div>
                   </div>
                   
@@ -142,7 +140,7 @@ const Contact = () => {
                       rows={5}
                       className={errors.message ? 'border-red-500' : ''}
                     />
-                    {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
+                    {errors.message && <p className="text-red-500 text-sm">{errors.message.message as string}</p>}
                   </div>
                   
                   <Button type="submit" variant="default" className="w-full md:w-auto">
