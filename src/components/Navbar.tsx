@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/c2c65240-e4bf-47ba-b22f-f1cefcf7f6e2.png" 
+                src="/lovable-uploads/88d2ce8f-12f1-43f8-8d47-d3722bb805ff.png" 
                 alt="VJ Electric Logo" 
                 className="h-12 md:h-16"
               />

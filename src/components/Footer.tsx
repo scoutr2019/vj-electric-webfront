@@ -8,7 +8,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between mb-8">
           <div className="mb-6 md:mb-0">
-            <h3 className="text-xl font-bold mb-4">VJ Electric</h3>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/88d2ce8f-12f1-43f8-8d47-d3722bb805ff.png" 
+                alt="VJ Electric Logo" 
+                className="h-12"
+              />
+            </div>
             <p className="text-gray-300 mb-2">Expert in elektriciteitswerken en zonnepanelen</p>
             <div id="contact" className="mt-4">
               <div className="flex items-center mb-3">
