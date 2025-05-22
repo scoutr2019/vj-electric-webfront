@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Info, CheckCircle, AlertCircle } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -21,6 +21,33 @@ const Contact = () => {
           </div>
         </div>
         
+        {/* Introduction Text */}
+        <section className="py-8 md:py-12 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Klaar om uw elektriciteitsproblemen op te lossen?</h2>
+              <p className="text-gray-600 mb-6">
+                Bij VJ Electric staan we klaar om u te helpen met al uw elektrische behoeften. Of het nu gaat om een kleine reparatie, 
+                een volledige installatie of advies over zonnepanelen - ons team van ervaren elektriciens staat voor u klaar.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                  <CheckCircle className="h-5 w-5 text-vj-red mr-2" />
+                  <span className="text-gray-700">Snelle responstijd</span>
+                </div>
+                <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                  <CheckCircle className="h-5 w-5 text-vj-red mr-2" />
+                  <span className="text-gray-700">Kwaliteitsgarantie</span>
+                </div>
+                <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                  <CheckCircle className="h-5 w-5 text-vj-red mr-2" />
+                  <span className="text-gray-700">Eerlijke prijzen</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row gap-12">
@@ -29,7 +56,7 @@ const Contact = () => {
                 <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                   <h2 className="text-2xl font-bold text-gray-800 mb-6">Contactgegevens</h2>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div className="flex items-start">
                       <div className="bg-vj-red/10 p-3 rounded-full mr-4">
                         <MapPin className="h-6 w-6 text-vj-red" />
@@ -63,6 +90,16 @@ const Contact = () => {
                         </a>
                       </div>
                     </div>
+                    
+                    <div className="flex items-start">
+                      <div className="bg-vj-red/10 p-3 rounded-full mr-4">
+                        <Clock className="h-6 w-6 text-vj-red" />
+                      </div>
+                      <div>
+                        <h3 className="font-medium text-gray-900">Openingsuren</h3>
+                        <p className="text-gray-600 mt-1">Ma - Vr: 8:00 - 18:00<br />Za: Op afspraak</p>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
@@ -72,6 +109,31 @@ const Contact = () => {
                     <Button className="flex items-center gap-2" onClick={() => window.open('mailto:info@vj-electric.be')}>
                       <Mail className="h-5 w-5" /> Email Ons
                     </Button>
+                  </div>
+                </div>
+
+                {/* FAQ Section */}
+                <div className="mt-10 bg-gray-50 p-6 rounded-lg shadow-sm">
+                  <div className="flex items-center mb-6">
+                    <Info className="h-6 w-6 text-vj-red mr-3" />
+                    <h2 className="text-2xl font-bold text-gray-800">Veelgestelde vragen</h2>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <div className="border-b border-gray-200 pb-4">
+                      <h3 className="font-medium text-gray-900 mb-2">Biedt u nooddiensten aan?</h3>
+                      <p className="text-gray-600">Ja, voor elektrische noodgevallen kunt u ons 24/7 bereiken op ons telefoonnummer.</p>
+                    </div>
+                    
+                    <div className="border-b border-gray-200 pb-4">
+                      <h3 className="font-medium text-gray-900 mb-2">Geeft u offertes voor grote projecten?</h3>
+                      <p className="text-gray-600">Absoluut! Wij bieden gratis offertes voor alle projecten, groot of klein. Neem contact met ons op om een afspraak te maken.</p>
+                    </div>
+                    
+                    <div className="pb-4">
+                      <h3 className="font-medium text-gray-900 mb-2">Welke regio's bedient u?</h3>
+                      <p className="text-gray-600">Wij zijn actief in heel West-Vlaanderen, met focus op de regio rond Poperinge, Ieper en Veurne.</p>
+                    </div>
                   </div>
                 </div>
               </div>
