@@ -97,7 +97,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-medium text-gray-900">Openingsuren</h3>
-                        <p className="text-gray-600 mt-1">Ma - Vr: 8:00 - 18:00<br />Za: Op afspraak</p>
+                        <p className="text-gray-600 mt-1">Ma - Vr: 8:00 - 18:00</p>
                       </div>
                     </div>
                   </div>
@@ -126,8 +126,8 @@ const Contact = () => {
                     </div>
                     
                     <div className="border-b border-gray-200 pb-4">
-                      <h3 className="font-medium text-gray-900 mb-2">Geeft u offertes voor grote projecten?</h3>
-                      <p className="text-gray-600">Absoluut! Wij bieden gratis offertes voor alle projecten, groot of klein. Neem contact met ons op om een afspraak te maken.</p>
+                      <h3 className="font-medium text-gray-900 mb-2">Geeft u offertes voor projecten?</h3>
+                      <p className="text-gray-600">Neem contact met ons op om de mogelijkheden voor uw project te bespreken.</p>
                     </div>
                     
                     <div className="pb-4">
