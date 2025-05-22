@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, MapPin, Clock, Info, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Info, CheckCircle, AlertCircle } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -56,7 +56,7 @@ const Contact = () => {
                 <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
                   <h2 className="text-2xl font-bold text-gray-800 mb-6">Contactgegevens</h2>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex items-start">
                       <div className="bg-vj-red/10 p-3 rounded-full mr-4">
                         <MapPin className="h-6 w-6 text-vj-red" />
@@ -90,23 +90,19 @@ const Contact = () => {
                         </a>
                       </div>
                     </div>
-                    
-                    <div className="flex items-start">
-                      <div className="bg-vj-red/10 p-3 rounded-full mr-4">
-                        <Clock className="h-6 w-6 text-vj-red" />
-                      </div>
-                      <div>
-                        <h3 className="font-medium text-gray-900">Openingsuren</h3>
-                        <p className="text-gray-600 mt-1">Ma - Vr: 8:00 - 18:00</p>
-                      </div>
-                    </div>
                   </div>
 
                   <div className="mt-8 flex flex-col md:flex-row gap-4 justify-center">
-                    <Button className="flex items-center gap-2" onClick={() => window.open('tel:+32471990952')}>
+                    <Button 
+                      className="flex items-center gap-2"
+                      onClick={() => window.location.href = 'tel:+32471990952'}
+                    >
                       <Phone className="h-5 w-5" /> Bel Ons
                     </Button>
-                    <Button className="flex items-center gap-2" onClick={() => window.open('mailto:info@vj-electric.be')}>
+                    <Button 
+                      className="flex items-center gap-2"
+                      onClick={() => window.location.href = 'mailto:info@vj-electric.be'}
+                    >
                       <Mail className="h-5 w-5" /> Email Ons
                     </Button>
                   </div>
