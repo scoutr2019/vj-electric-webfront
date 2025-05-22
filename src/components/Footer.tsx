@@ -58,7 +58,7 @@ const Footer = () => {
               VJ Electric – Joran Vandeputte | BTW BE0123.456.789
             </p>
             <p className="text-gray-400 text-sm">
-              2025. Design & Development by ThuisIT
+              © 2025. Design & Development by ThuisIT
             </p>
           </div>
         </div>
