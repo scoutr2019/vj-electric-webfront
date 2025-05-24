@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
@@ -19,7 +18,14 @@ const Footer = () => {
             <div id="contact" className="mt-4">
               <div className="flex items-center mb-3">
                 <MapPin className="h-5 w-5 mr-3 text-vj-red" />
-                <p className="text-gray-300">Kapellestraat 32, 8978 Watou (Poperinge)</p>
+                <a 
+                  href="https://www.google.com/maps/search/?api=1&query=Kapellestraat+32%2C+8978+Watou+%28Poperinge%29"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition cursor-pointer"
+                >
+                  Kapellestraat 32, 8978 Watou (Poperinge)
+                </a>
               </div>
               <div className="flex items-center mb-3">
                 <Mail className="h-5 w-5 mr-3 text-vj-red" />

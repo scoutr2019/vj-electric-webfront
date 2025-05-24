@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -11,15 +10,43 @@ const Contact = () => {
       <Navbar />
       
       <main className="flex-grow">
-        {/* Page Header */}
-        <div className="bg-gradient-to-r from-gray-900 to-black py-12">
-          <div className="container mx-auto px-4">
-            <h1 className="text-3xl md:text-4xl font-bold text-white text-center">
-              Contacteer <span className="text-vj-red">Ons</span>
-            </h1>
-            <div className="w-16 h-1 bg-vj-red mx-auto mt-4"></div>
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-r from-gray-900 to-black py-16 md:py-24">
+          <div className="absolute inset-0 bg-[url('/lovable-uploads/c2c65240-e4bf-47ba-b22f-f1cefcf7f6e2.png')] bg-no-repeat bg-center opacity-5"></div>
+          
+          <div className="absolute top-0 left-0 w-full h-1 bg-vj-red"></div>
+          <div className="absolute bottom-0 left-0 w-full h-1 bg-vj-red"></div>
+          
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                Contacteer <span className="text-vj-red">VJ Electric</span>
+              </h1>
+              <div className="w-16 h-1 bg-vj-red mx-auto mb-6"></div>
+              <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                Heeft u vragen over elektriciteitswerken of zonnepanelen? 
+                <br className="hidden md:block" />
+                Wij staan klaar om u te helpen!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  className="bg-vj-red hover:bg-red-700 text-white font-medium py-3 px-8"
+                  onClick={() => window.location.href = 'tel:+32471990952'}
+                >
+                  <Phone className="h-5 w-5 mr-2" /> 
+                  Bel Direct
+                </Button>
+                <Button 
+                  className="bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white/20"
+                  onClick={() => window.location.href = 'mailto:info@vj-electric.be'}
+                >
+                  <Mail className="h-5 w-5 mr-2" /> 
+                  Email Ons
+                </Button>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
         
         {/* Introduction Text */}
         <section className="py-8 md:py-12 bg-gray-50">
@@ -63,7 +90,14 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-medium text-gray-900">Adres</h3>
-                        <p className="text-gray-600 mt-1">Kapellestraat 32<br />8978 Watou (Poperinge)</p>
+                        <a 
+                          href="https://www.google.com/maps/search/?api=1&query=Kapellestraat+32%2C+8978+Watou+%28Poperinge%29"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-600 hover:text-vj-red transition mt-1 block cursor-pointer"
+                        >
+                          Kapellestraat 32<br />8978 Watou (Poperinge)
+                        </a>
                       </div>
                     </div>
                     
