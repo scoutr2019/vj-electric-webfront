@@ -61,7 +61,7 @@ const Footer = () => {
         <div className="pt-6 mt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              VJ Electric – Joran Vandeputte | BTW BE0123.456.789
+              VJ Electric – Joran Vandeputte | BTW BE0847.658.947
             </p>
             <p className="text-gray-400 text-sm">
               © 2025. Design & Development by ThuisIT
