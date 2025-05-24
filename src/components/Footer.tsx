@@ -8,9 +8,16 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between mb-8">
           <div className="mb-6 md:mb-0">
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/c2c65240-e4bf-47ba-b22f-f1cefcf7f6e2.png" 
+                alt="VJ Electric Logo" 
+                className="h-12 w-auto mr-3"
+              />
+            </div>
             <p className="text-gray-300 mb-4">Expert in elektriciteitswerken en zonnepanelen</p>
             <div id="contact" className="mt-4">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="space-y-4">
                 <div className="flex items-center">
                   <MapPin className="h-5 w-5 mr-3 text-vj-red" />
                   <a 
@@ -66,7 +73,15 @@ const Footer = () => {
               VJ Electric – Joran Vandeputte | BTW BE0847.658.947
             </p>
             <p className="text-gray-400 text-sm">
-              © 2025. Design & Development by ThuisIT
+              © 2025. Design & Development by{' '}
+              <a 
+                href="https://thuisit.be/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
+                ThuisIT
+              </a>
             </p>
           </div>
         </div>
