@@ -2,7 +2,7 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Mail, Phone, MapPin, Info, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Info, CheckCircle } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -10,7 +10,7 @@ const Contact = () => {
       <Navbar />
       
       <main className="flex-grow">
-        {/* Hero Section */}
+        {/* Hero Section - zonder logo */}
         <section className="relative bg-gradient-to-r from-gray-900 to-black py-16 md:py-24">
           <div className="absolute inset-0 bg-[url('/lovable-uploads/c2c65240-e4bf-47ba-b22f-f1cefcf7f6e2.png')] bg-no-repeat bg-center opacity-5"></div>
           
@@ -32,7 +32,7 @@ const Contact = () => {
           </div>
         </section>
         
-        {/* Introduction Text */}
+        {/* Introduction Text - zonder buttons */}
         <section className="py-8 md:py-12 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
@@ -41,20 +41,6 @@ const Contact = () => {
                 Bij VJ Electric staan we klaar om u te helpen met al uw elektrische behoeften. Of het nu gaat om een kleine reparatie, 
                 een volledige installatie of advies over zonnepanelen - ons team van ervaren elektriciens staat voor u klaar.
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                  <CheckCircle className="h-5 w-5 text-vj-red mr-2" />
-                  <span className="text-gray-700">Snelle responstijd</span>
-                </div>
-                <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                  <CheckCircle className="h-5 w-5 text-vj-red mr-2" />
-                  <span className="text-gray-700">Kwaliteitsgarantie</span>
-                </div>
-                <div className="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
-                  <CheckCircle className="h-5 w-5 text-vj-red mr-2" />
-                  <span className="text-gray-700">Eerlijke prijzen</span>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -62,10 +48,10 @@ const Contact = () => {
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row gap-12">
-              {/* Contact Information */}
+              {/* Contact Information - horizontaal layout */}
               <div className="w-full">
                 <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                  <h2 className="text-2xl font-bold text-gray-800 mb-6">Contactgegevens</h2>
+                  <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Contactgegevens</h2>
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="flex flex-col items-center text-center">
@@ -105,7 +91,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                {/* FAQ Section */}
+                {/* FAQ Section - uitgebreide tekst over regio's */}
                 <div className="mt-10 bg-gray-50 p-6 rounded-lg shadow-sm">
                   <div className="flex items-center mb-6">
                     <Info className="h-6 w-6 text-vj-red mr-3" />
@@ -125,7 +111,7 @@ const Contact = () => {
                     
                     <div className="pb-4">
                       <h3 className="font-medium text-gray-900 mb-2">Welke regio's bedient u?</h3>
-                      <p className="text-gray-600">Wij zijn actief in heel West-Vlaanderen, met focus op de regio rond Poperinge, Ieper en Veurne. Ook voor projecten buiten deze regio's nemen we graag contact op om de mogelijkheden te bespreken.</p>
+                      <p className="text-gray-600">Wij zijn actief in heel West-Vlaanderen, met focus op de regio rond Poperinge, Ieper en Veurne. Ook voor projecten buiten deze regio's nemen we graag contact op om de mogelijkheden te bespreken en aanvaarden we zeker werk.</p>
                     </div>
                   </div>
                 </div>
@@ -134,7 +120,7 @@ const Contact = () => {
           </div>
         </section>
         
-        {/* Map Section - Updated with correct address coordinates */}
+        {/* Map Section */}
         <section className="pb-12 md:pb-16">
           <div className="container mx-auto px-4">
             <div className="bg-gray-50 p-4 rounded-lg overflow-hidden shadow-sm">
