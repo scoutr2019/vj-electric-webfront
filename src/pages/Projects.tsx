@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const Projects = () => {
   const projects = [
@@ -18,7 +19,11 @@ const Projects = () => {
         'Monitoring systeem geïnstalleerd',
         'Volledige keuring en certificatie'
       ],
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      images: [
+        'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        'https://images.unsplash.com/photo-1601292793517-526f48cdf3b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        'https://images.unsplash.com/photo-1497440001374-f26997328c1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+      ],
       year: '2024'
     },
     {
@@ -33,7 +38,11 @@ const Projects = () => {
         'LED-verlichting in alle ruimtes',
         'Netwerk- en telecommunicatiebekabeling'
       ],
-      image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      images: [
+        'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+      ],
       year: '2024'
     },
     {
@@ -48,7 +57,11 @@ const Projects = () => {
         'Smart charging app connectiviteit',
         'Load balancing voor optimaal gebruik'
       ],
-      image: 'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      images: [
+        'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        'https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        'https://images.unsplash.com/photo-1555636222-cae831e670b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+      ],
       year: '2023'
     }
   ];
@@ -83,11 +96,22 @@ const Projects = () => {
               {projects.map((project) => (
                 <Card key={project.id} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="relative">
-                    <img 
-                      src={project.image} 
-                      alt={project.title} 
-                      className="w-full h-64 object-cover"
-                    />
+                    <Carousel className="w-full">
+                      <CarouselContent>
+                        {project.images.map((image, index) => (
+                          <CarouselItem key={index}>
+                            <img 
+                              src={image} 
+                              alt={`${project.title} - foto ${index + 1}`} 
+                              className="w-full h-64 object-cover"
+                            />
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious className="left-2" />
+                      <CarouselNext className="right-2" />
+                    </Carousel>
+                    
                     <div className="absolute top-4 left-4">
                       <span className="bg-vj-red text-white px-3 py-1 rounded-full text-sm font-medium">
                         {project.category}
