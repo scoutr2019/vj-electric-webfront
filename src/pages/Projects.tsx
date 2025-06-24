@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -9,19 +8,19 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Zonnepanelen installatie Poperinge',
+      title: 'Zonnepanelen installatie',
       category: 'Residentieel',
       location: 'Poperinge',
-      description: 'Volledige installatie van 24 zonnepanelen op een residentiële woning met een totaal vermogen van 8,4 kWp. Het project omvatte de plaatsing van de panelen, omvormer en alle benodigde bekabeling.',
+      description: 'Volledige installatie van 24 zonnepanelen op een residentiële woning met een totaal vermogen van 0.43 kWp. Het project omvatte de plaatsing van de panelen, omvormer en alle benodigde bekabeling.',
       details: [
         '24 hoogwaardige zonnepanelen',
-        'SolarEdge omvormer met optimizers',
+        'Fronius omvormer met optimizers',
         'Monitoring systeem geïnstalleerd',
         'Volledige keuring en certificatie'
       ],
       images: [
-        'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-        'https://images.unsplash.com/photo-1601292793517-526f48cdf3b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+        '/lovable-uploads/75b14702-33eb-49ee-9444-7286735131f3.png',
+        '/lovable-uploads/a138ac42-3ee6-4729-b6d7-07b663c10734.png',
         'https://images.unsplash.com/photo-1497440001374-f26997328c1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
       ],
       year: '2024'
