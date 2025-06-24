@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -21,6 +22,24 @@ const Projects = () => {
       images: [
         '/lovable-uploads/75b14702-33eb-49ee-9444-7286735131f3.png',
         '/lovable-uploads/a138ac42-3ee6-4729-b6d7-07b663c10734.png'
+      ]
+    },
+    {
+      id: 2,
+      title: 'Buitenverlichting installatie',
+      category: 'Residentieel',
+      description: 'Volledige installatie van moderne wand- en tuinverlichting bij een landelijke woning. Het project omvatte het voorzien van stijlvolle wandarmaturen onder de overkapping en robuuste tuinverlichting op houten palen langs het gazon.',
+      details: [
+        'Design wandlampen met E27 filamentlampen en glazen behuizing',
+        'Robuuste tuinverlichting op hardhouten palen met dubbele lampbehuizing',
+        'Geïntegreerde bekabeling volledig weggewerkt',
+        'Aansluiting en configuratie via tijdsschakelaar en schemerschakelaar',
+        'Installatie klaar voor gebruik, inclusief controle en nazicht'
+      ],
+      images: [
+        '/lovable-uploads/e8cbe1f3-40f6-45db-b3e2-660d67cd6f66.png',
+        '/lovable-uploads/a21a67b0-136e-456b-8ed4-d7974403945b.png',
+        '/lovable-uploads/c4de389e-460a-44fd-a612-3f3cae9be17c.png'
       ]
     }
   ];
