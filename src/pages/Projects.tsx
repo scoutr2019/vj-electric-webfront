@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -10,7 +11,6 @@ const Projects = () => {
       id: 1,
       title: 'Zonnepanelen installatie',
       category: 'Residentieel',
-      location: 'Poperinge',
       description: 'Volledige installatie van 24 zonnepanelen op een residentiële woning met een totaal vermogen van 0.43 kWp. Het project omvatte de plaatsing van de panelen, omvormer en alle benodigde bekabeling.',
       details: [
         '24 hoogwaardige zonnepanelen',
@@ -20,48 +20,8 @@ const Projects = () => {
       ],
       images: [
         '/lovable-uploads/75b14702-33eb-49ee-9444-7286735131f3.png',
-        '/lovable-uploads/a138ac42-3ee6-4729-b6d7-07b663c10734.png',
-        'https://images.unsplash.com/photo-1497440001374-f26997328c1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-      ],
-      year: '2024'
-    },
-    {
-      id: 2,
-      title: 'Elektrische renovatie kantoorpand',
-      category: 'Commercieel',
-      location: 'Ieper',
-      description: 'Complete renovatie van de elektrische installatie van een kantoorpand van 400m². Vernieuwing van het volledige elektriciteitsnet conform de nieuwste normen en voorschriften.',
-      details: [
-        'Volledige herbedrading van het pand',
-        'Nieuwe hoofdverdeelkast geïnstalleerd',
-        'LED-verlichting in alle ruimtes',
-        'Netwerk- en telecommunicatiebekabeling'
-      ],
-      images: [
-        'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-        'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-      ],
-      year: '2024'
-    },
-    {
-      id: 3,
-      title: 'EV-laadpaal installatie Watou',
-      category: 'Residentieel',
-      location: 'Watou',
-      description: 'Installatie van een slimme EV-laadpaal voor een particuliere klant. Inclusief de benodigde versterkingen aan de elektrische installatie en smart charging mogelijkheden.',
-      details: [
-        '11 kW slimme laadpaal geïnstalleerd',
-        'Aparte kring vanuit hoofdbord',
-        'Smart charging app connectiviteit',
-        'Load balancing voor optimaal gebruik'
-      ],
-      images: [
-        'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-        'https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-        'https://images.unsplash.com/photo-1555636222-cae831e670b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-      ],
-      year: '2023'
+        '/lovable-uploads/a138ac42-3ee6-4729-b6d7-07b663c10734.png'
+      ]
     }
   ];
 
@@ -116,20 +76,12 @@ const Projects = () => {
                         {project.category}
                       </span>
                     </div>
-                    <div className="absolute top-4 right-4">
-                      <span className="bg-black/70 text-white px-3 py-1 rounded-full text-sm">
-                        {project.year}
-                      </span>
-                    </div>
                   </div>
                   
                   <CardHeader>
                     <CardTitle className="text-xl text-gray-800">
                       {project.title}
                     </CardTitle>
-                    <CardDescription className="text-vj-red font-medium">
-                      {project.location}
-                    </CardDescription>
                   </CardHeader>
                   
                   <CardContent>
