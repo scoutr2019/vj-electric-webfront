@@ -39,6 +39,24 @@ const Projects = () => {
         '/lovable-uploads/a21a67b0-136e-456b-8ed4-d7974403945b.png',
         '/lovable-uploads/c4de389e-460a-44fd-a612-3f3cae9be17c.png'
       ]
+    },
+    {
+      id: 3,
+      title: 'LED-sfeerverlichting installatie',
+      category: 'Residentieel',
+      description: 'Installatie van hoogwaardige RGB LED-verlichting in een moderne tuinlounge. Het project werd volledig geïntegreerd in de constructie, met bediening via afstandsbediening of smartphone, voor een sfeervolle beleving bij dag en nacht.',
+      details: [
+        'RGB LED-profielen ingewerkt in plafond en zijwanden',
+        'Bediening via draadloze controller én mobiele app',
+        'Meerdere kleurmodi en dimbare instellingen',
+        'Energiezuinige en duurzame installatie',
+        'Extra tuinspots voor accentverlichting in het groen'
+      ],
+      images: [
+        '/lovable-uploads/137da254-a1bf-48f8-b964-7b0c723e6997.png',
+        '/lovable-uploads/dab89103-60ed-4787-96e0-118dbf449ff1.png',
+        '/lovable-uploads/650c7096-5ba3-4351-99b3-dc412ae923c7.png'
+      ]
     }
   ];
 
