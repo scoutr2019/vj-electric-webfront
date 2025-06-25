@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -12,7 +10,7 @@ const Projects = () => {
       id: 1,
       title: 'Zonnepanelen installatie',
       category: 'Residentieel',
-      description: 'Volledige installatie van 24 zonnepanelen op een residentiële woning met een totaal vermogen van 0.43 kWp. Het project omvatte de plaatsing van de panelen, omvormer en alle benodigde bekabeling.',
+      description: 'Volledige installatie van 24 zonnepanelen op een residentiële woning met een totaal vermogen van 10 kWp. Het project omvatte de plaatsing van de panelen, omvormer en alle benodigde bekabeling.',
       details: [
         '24 hoogwaardige zonnepanelen',
         'Fronius omvormer met optimizers',
