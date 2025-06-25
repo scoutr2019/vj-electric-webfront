@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -169,12 +171,12 @@ const Projects = () => {
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
               Neem contact met ons op om de mogelijkheden voor uw elektriciteits- of zonnepaneelproject te bespreken.
             </p>
-            <a 
-              href="/contact" 
+            <Link 
+              to="/contact" 
               className="inline-block bg-vj-red text-white px-8 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors"
             >
               Contact opnemen
-            </a>
+            </Link>
           </div>
         </section>
       </main>
