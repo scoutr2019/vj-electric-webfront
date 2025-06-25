@@ -57,6 +57,24 @@ const Projects = () => {
         '/lovable-uploads/dab89103-60ed-4787-96e0-118dbf449ff1.png',
         '/lovable-uploads/650c7096-5ba3-4351-99b3-dc412ae923c7.png'
       ]
+    },
+    {
+      id: 4,
+      title: 'Binnenverlichting installatie',
+      category: 'Residentieel',
+      description: 'Installatie van stijlvolle binnenverlichting in een landelijke woning, met aandacht voor sfeer, functionaliteit en design. De verlichting werd zorgvuldig gekozen en geplaatst in de slaapkamers, traphal en nachthal voor een warme, uitnodigende uitstraling.',
+      details: [
+        'Wandlampen met indirect licht naast het bed',
+        'Hanglampen met moderne afwerking in de nachthal',
+        'Up & down wandarmaturen aan de trap voor sfeervolle accenten',
+        'Alle armaturen voorzien van energiezuinige LED-verlichting',
+        'Strakke afwerking en discrete inbouw van elektrische aansluitingen'
+      ],
+      images: [
+        '/lovable-uploads/07b7a4f6-ca26-4ef2-be91-6a9d3b76639a.png',
+        '/lovable-uploads/6e536e5d-6ee7-493f-9de4-01735d65e545.png',
+        '/lovable-uploads/f2314332-6eab-48c1-98b0-adfd288110aa.png'
+      ]
     }
   ];
 
