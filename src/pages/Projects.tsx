@@ -77,6 +77,22 @@ const Projects = () => {
         '/lovable-uploads/6e536e5d-6ee7-493f-9de4-01735d65e545.png',
         '/lovable-uploads/f2314332-6eab-48c1-98b0-adfd288110aa.png'
       ]
+    },
+    {
+      id: 5,
+      title: 'Thuisbatterij installatie',
+      category: 'Residentieel',
+      description: 'Installatie van een krachtig batterijopslagsysteem op basis van BYD-modules, met een totale capaciteit van 33 kWh. Deze oplossing laat toe om zonne-energie maximaal op te slaan en zelfverbruik sterk te verhogen, met volledige integratie in het bestaande energiesysteem.',
+      details: [
+        '12 BYD high-voltage batterijen van 2,76 kWh per stuk',
+        'Totale opslagcapaciteit van ±33 kWh',
+        'Uitbreidbaar en compatibel met diverse omvormers (o.a. Fronius/SMA)',
+        'Modulair en onderhoudsvriendelijk systeem',
+        'Slim energiebeheer via monitoring en sturing'
+      ],
+      images: [
+        '/lovable-uploads/0736e609-87c4-4b2e-be29-660a2854c31c.png'
+      ]
     }
   ];
 
