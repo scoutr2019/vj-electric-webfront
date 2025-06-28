@@ -1,10 +1,10 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 
 const Projects = () => {
   const projects = [
@@ -93,6 +93,22 @@ const Projects = () => {
       images: [
         '/lovable-uploads/0736e609-87c4-4b2e-be29-660a2854c31c.png'
       ]
+    },
+    {
+      id: 6,
+      title: 'Zonnepanelen installatie op loods',
+      category: 'Commercieel',
+      description: 'Plaatsing van 40 zonnepanelen van elk 410 Wp op het dak van een landbouwloods. Deze installatie zorgt voor een hoog rendement en maakt optimaal gebruik van het grote dakoppervlak, perfect voor eigen verbruik en energiebesparing op het bedrijf.',
+      details: [
+        '40 zonnepanelen van 410 Wp – totaalvermogen van 16,4 kWp',
+        'Stevige montage op golfplaten dak',
+        'Omvormer(s) afgestemd op piekbelasting',
+        'Volledige bekabeling, aarding en beveiliging voorzien',
+        'Klaar voor keuring en koppeling met monitoringsysteem'
+      ],
+      images: [
+        '/lovable-uploads/4a55d0dd-5ca7-4a8a-b91c-b89ad922e1a8.png'
+      ]
     }
   ];
 
@@ -130,11 +146,22 @@ const Projects = () => {
                       <CarouselContent>
                         {project.images.map((image, index) => (
                           <CarouselItem key={index}>
-                            <img 
-                              src={image} 
-                              alt={`${project.title} - foto ${index + 1}`} 
-                              className="w-full h-64 object-cover"
-                            />
+                            <Dialog>
+                              <DialogTrigger asChild>
+                                <img 
+                                  src={image} 
+                                  alt={`${project.title} - foto ${index + 1}`} 
+                                  className="w-full h-64 object-cover cursor-pointer hover:opacity-90 transition-opacity"
+                                />
+                              </DialogTrigger>
+                              <DialogContent className="max-w-4xl max-h-[90vh] p-0">
+                                <img 
+                                  src={image} 
+                                  alt={`${project.title} - foto ${index + 1}`} 
+                                  className="w-full h-auto object-contain"
+                                />
+                              </DialogContent>
+                            </Dialog>
                           </CarouselItem>
                         ))}
                       </CarouselContent>
