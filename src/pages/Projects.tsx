@@ -109,6 +109,22 @@ const Projects = () => {
       images: [
         '/lovable-uploads/4a55d0dd-5ca7-4a8a-b91c-b89ad922e1a8.png'
       ]
+    },
+    {
+      id: 7,
+      title: 'Industriële zonnepanelen installatie',
+      category: 'Commercieel',
+      description: 'Installatie van een krachtig zonnestroomsysteem op een bedrijfspand, met een totaalvermogen van 17 kWp verdeeld over drie omvormers. De panelen werden zorgvuldig geplaatst op een metalen dak met optimale oriëntatie voor maximale opbrengst.',
+      details: [
+        '17 kWp aan zonnepanelen op metalen dak',
+        '3 afzonderlijke omvormers: 3 kW + 3 kW + 4 kW',
+        'Efficiënte spreiding van belasting en opbrengst',
+        'Volledig uitgeruste installatie met aarding en overspanningsbeveiliging',
+        'Klaar voor monitoring, keuring en netkoppeling'
+      ],
+      images: [
+        '/lovable-uploads/c3d43939-4045-4832-9ecf-fd0fdbeb9649.png'
+      ]
     }
   ];
 
